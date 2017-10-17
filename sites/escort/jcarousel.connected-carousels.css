@@ -1,0 +1,157 @@
+
+.connected-carousels{
+    margin: 0 -5px 10px;
+
+}
+
+.navigation {
+    width: 20%;
+}
+
+
+.stage {
+    width: 80%;
+}
+
+.navigation,
+.stage{
+    float: left;
+    position: relative;
+    padding: 0 5px;
+}
+
+
+.connected-carousels .carousel {
+    overflow: hidden;
+    position: relative;
+    max-height: 610px;
+}
+
+.connected-carousels .carousel-stage li{
+    height: 610px;
+}
+
+.connected-carousels .carousel-stage li img{
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+
+.connected-carousels .carousel ul {
+    height: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/** Navigation carousel specific styles **/
+
+.connected-carousels .carousel-navigation li {
+    cursor: pointer;
+    padding-bottom: 10px;
+
+}
+
+.connected-carousels .carousel li img {
+    width: 100%;
+}
+
+.connected-carousels .carousel li.active img {
+    border: 5px solid #cca557;
+}
+
+
+
+.connected-carousels .next,
+.connected-carousels .prev{
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    margin: auto;
+    opacity: .7;
+    z-index: 999;
+}
+
+.connected-carousels .next:hover,
+.connected-carousels .prev:hover{
+    opacity: .9;
+}
+
+
+.connected-carousels .next{
+    bottom: 0;
+    background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+}
+.connected-carousels .prev{
+    top:0;
+    background-image:-webkit-linear-gradient(top,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -webkit-gradient(linear,left top,left top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image: linear-gradient(to top,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+}
+
+.stage .next,
+.stage .prev{
+    height: 60px;
+}
+
+.navigation .next,
+.navigation .prev{
+    height: 30px;
+}
+
+
+
+.connected-carousels .next:after,
+.connected-carousels .prev:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-color: #cca557;
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    z-index: 999;
+}
+
+.connected-carousels .next:after{
+    bottom:0;
+    transform: rotate(135deg);
+}
+.connected-carousels .prev:after{
+    top:0;
+    transform: rotate(-45deg);
+}
+
+.stage .next:after,
+.stage .prev:after{
+    width: 60px;
+    height: 60px;
+}
+
+.stage .next:after{
+    bottom:20px;
+}
+.stage .prev:after{
+    top:20px;
+}
+
+.navigation .next:after,
+.navigation .prev:after{
+    width: 30px;
+    height: 30px;
+}
+
+.navigation .next:after{
+    bottom: 10px;
+}
+.navigation .prev:after{
+    top: 10px;    
+}
+

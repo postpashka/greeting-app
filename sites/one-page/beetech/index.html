@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html lang="ru"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  <title>Заголовок</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="./bootstrap-grid.min.css">
+
+<style type="text/css">@font-face {
+  font-family: "AcknowledgeBold";
+  src: url("./assets/fonts/AcknowledgeBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "AcknowledgeRegular";
+  src: url("./assets/fonts/AcknowledgeRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "AcromBold";
+  src: url("./assets/fonts/AcromBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("./assets/fonts/ProximaNovaBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaCondensedLight";
+  src: url("./assets/fonts/ProximaNovaCondensedLight.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaCondensedRegular";
+  src: url("./assets/fonts/ProximaNovaCondensedRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("./assets/fonts/ProximaNovaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  color: #f4c844;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: ProximaNovaRegular;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.25); }
+
+h2 {
+  color: #050505;
+  font-size: 2.8125rem;
+  margin: 0;
+  line-height: 3rem;
+  font-family: ProximaNovaBold; }
+  h2.inverse {
+    color: #f4c844; }
+
+h3 {
+  line-height: 2rem;
+  font-size: 1.625rem;
+  color: #000; }
+
+p {
+  line-height: 2rem;
+  margin: 0px;
+  color: #070707;
+  font-family: ProximaNovaCondensedLight;
+  font-size: 1.625rem; }
+
+article > h2,
+article > p {
+  margin: 30px 0; }
+
+.vertical-middle {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%); }
+
+.page:before,
+.page:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 505px;
+  background: url("./assets/img/side-hex-bg.jpg"); }
+
+.page:before {
+  left: 0; }
+
+.page:after {
+  right: 0; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.btn {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 1.75rem;
+  line-height: 1.7rem;
+  font-family: AcromBold;
+  color: #080808;
+  background-color: #f4c844;
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to bottom, #ffff58 0%, #f1b80d 100%);
+  transition: box-shadow 0.2s ease-in-out; }
+
+.btn:hover {
+  text-decoration: none;
+  color: #080808;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5); }
+
+.btn:active {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5); }
+
+.hexagon-panel {
+  position: relative;
+  display: inline-block;
+  padding: 140px 0;
+  width: 100%;
+  max-width: 420px;
+  min-width: 370px;
+  margin-left: -150px;
+  margin-right: -150px; }
+
+.hexagon {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 29% 0;
+  opacity: 0.74;
+  margin: auto; }
+  .hexagon:before, .hexagon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .hexagon:before {
+    transform: rotate(60deg); }
+  .hexagon:after {
+    transform: rotate(-60deg); }
+
+.hexagon,
+.hexagon:before,
+.hexagon:after {
+  background-color: #000; }
+
+.hexagon-panel.panel-orange .hexagon,
+.hexagon-panel.panel-orange .hexagon:before,
+.hexagon-panel.panel-orange .hexagon:after {
+  background-color: #f4c844; }
+
+.hexagon-content {
+  position: absolute;
+  overflow: hidden;
+  max-height: 80%;
+  min-height: 60%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 80%;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%); }
+
+.hexagon-content > h2 {
+  color: #f4c844; }
+
+.hexagon-content > p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #fffdfd; }
+
+.hexagon-panel.panel-orange .hexagon-content > h2 {
+  color: #000; }
+
+.hexagon-panel.panel-orange .hexagon-content > p {
+  color: #000; }
+
+.hexagon-icon {
+  z-index: 1;
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("./assets/img/icons.png");
+  background-repeat: no-repeat;
+  background-size: 400%; }
+
+.hexagon-icon-1 {
+  background-position: 0 0; }
+
+.hexagon-icon-2 {
+  background-position: 33.3% 0; }
+
+.hexagon-icon-3 {
+  background-position: 66.3% 0; }
+
+.hexagon-icon-4 {
+  background-position: 100% 0; }
+
+.hexagon-icon-5 {
+  background-position: 0 100%; }
+
+.hexagon-icon-6 {
+  background-position: 33.3% 100%; }
+
+.hexagon-icon-7 {
+  background-position: 66.3% 100%; }
+
+.hexagon-icon-8 {
+  background-position: 100% 100%; }
+
+.hexagon-icon-panel {
+  position: relative;
+  width: 100px;
+  height: 57.74px;
+  background-color: #fff;
+  margin: 28.87px auto;
+  border-left: solid 11px #f4c844;
+  border-right: solid 11px #f4c844; }
+
+.hexagon-icon-panel:before,
+.hexagon-icon-panel:after {
+  content: "";
+  position: absolute;
+  width: 70.71px;
+  height: 70.71px;
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 3.6447px; }
+
+.hexagon-icon-panel:before {
+  top: -35.3553px;
+  border-top: solid 15.5563px #f4c844;
+  border-right: solid 15.5563px #f4c844; }
+
+.hexagon-icon-panel:after {
+  bottom: -35.3553px;
+  border-bottom: solid 15.5563px #f4c844;
+  border-left: solid 15.5563px #f4c844; }
+
+.hidden {
+  display: none; }
+
+.font-test {
+  font-size: 30px; }
+
+.fontAcknowledgeBold {
+  font-family: AcknowledgeBold; }
+
+.fontAcknowledgeRegular {
+  font-family: AcknowledgeRegular; }
+
+.fontAcromBold {
+  font-family: AcromBold; }
+
+.fontProximaNovaBold {
+  font-family: ProximaNovaBold; }
+
+.fontProximaNovaCondensedLight {
+  font-family: ProximaNovaCondensedLight; }
+
+.fontProximaNovaCondensedRegular {
+  font-family: ProximaNovaCondensedRegular; }
+
+.fontProximaNovaRegula {
+  font-family: ProximaNovaRegula; }
+
+header,
+section,
+header {
+  position: relative; }
+
+.divider.header-divider {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); }
+
+.section-divider {
+  position: relative; }
+
+.divider {
+  min-height: 55px;
+  width: 100%;
+  background-color: #000;
+  border-bottom: 5px solid #f4c844; }
+
+header {
+  position: relative;
+  height: 335px;
+  text-align: center;
+  background: url(./assets/img/header-bg.jpg) 50% 50% no-repeat; }
+
+.logo {
+  position: relative;
+  display: inline-block;
+  padding-left: 120px;
+  line-height: 65px;
+  height: 75px;
+  color: #000;
+  font-family: AcromBold;
+  font-size: 2.125rem;
+  background: url(./assets/img/logo.png) 0% 50% no-repeat; }
+
+.menu > ul {
+  margin: 0px; }
+
+.menu > ul > li {
+  display: inline-block;
+  list-style: none; }
+
+.menu > ul > li > a {
+  display: inline-block;
+  padding: 0 15px;
+  margin: 10px 0; }
+
+.menu > ul > li:not(:last-child) > a {
+  border-right: 1px solid #f4c844; }
+
+.menu > ul > li > a,
+.menu > ul > li > a:hover {
+  text-decoration: none;
+  color: #f4c844;
+  font-size: 1.625rem; }
+
+.who-we-are {
+  height: 395px; }
+
+.services-provided {
+  height: 530px; }
+
+.section-hex {
+  background: url(./assets/img/section-hex-bg.jpg) 50% 50% no-repeat;
+  background-size: cover; }
+
+.platform {
+  height: 670px;
+  background: url(./assets/img/platform-bg.jpg) 50% 50% no-repeat; }
+
+.crm {
+  background: url(./assets/img/crm-bg.jpg) 50% 50% no-repeat;
+  height: 3200px; }
+
+.crm-preblock {
+  height: 600px; }
+
+.crm-block {
+  height: 680px; }
+
+.crm-postblock {
+  height: 560px; }
+
+.footer-divider {
+  border-top: 5px solid #f4c844;
+  background-color: #000; }
+
+.payments {
+  margin-top: 20px;
+  height: 55px;
+  width: 400px;
+  display: inline-block;
+  background-image: url(./assets/img/payments.png);
+  background-size: 200%; }
+
+.payment-one {
+  background-position: 0 0; }
+
+.payment-two {
+  background-position: 100% 0; }
+
+p.copyright {
+  margin: 50px 0;
+  color: #707070; }
+
+@media only screen and (max-width: 760px) {
+  body,
+  html {
+    font-size: 14px; }
+  .service-article p {
+    display: none; }
+  .payments {
+    height: 45px;
+    width: 290px; } 
+  .menu > ul > li:not(:last-child) > a {
+    border-right: 1px solid transparent; } }
+</style></head>
+
+<body>
+  
+  <div class="hidden"></div>
+
+  <div class="loader">
+    <div class="loader_inner"></div>
+  </div>
+  <div id="index" class="page">
+     <header class="container">
+        <div class="row">
+           <div class="col-md-12 text-left"><a class="logo">BeeTech+</a></div>
+           <div class="header-divider divider">
+              <nav class="menu">
+                 <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Platform features</a></li>
+                    <li><a>CRM Features</a></li>
+                    <li><a>Services Provided</a></li>
+                 </ul>
+              </nav>
+           </div>
+        </div>
+     </header>
+     <section class="container who-we-are section-hex text-center">
+        <div class="row vertical-middle">
+           <article class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+              <h2>The company – Who are we?</h2>
+              <p>Beetech was founded in 2015 by a team of binary options veterans with the aim of making a fully encompassing binary options platform solution that allows our customers to focus on their areas of expertise and to start generating profits immediately.</p>
+           </article>
+        </div>
+     </section>
+     <div class="container">
+        <div class="row">
+           <div class="section-divider divider"></div>
+        </div>
+     </div>
+     <section class="container platform text-center">
+        <div class="row vertical-middle">
+           <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+              <div class="hexagon-panel">
+                 <div class="hexagon"></div>
+                 <div class="hexagon-content">
+                    <h2>Platform features</h2>
+                    <p>Our trading platform has been lovingly designed to be user friendly, while maintaining a beautiful design. We offer a top of the range live feed and a wide range of assets meaning your clients can trade what they want and how they want in real time.</p>
+                 </div>
+              </div>
+           </div>
+           <div class="col-md-12">
+              <p><a class="btn">Call to Action</a></p>
+           </div>
+        </div>
+     </section>
+     <div class="container">
+        <div class="row">
+           <div class="section-divider divider"></div>
+        </div>
+     </div>
+     <section class="container crm text-center">
+        <div class="crm-preblock">
+           <div class="row">
+              <article class="service-article col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                 <h2>CRM Features</h2>
+                 <p>Using our vast experience in the binary options business we have created a back office system that provides you all the features that you need. <br> We provide a fast, simple and clean interface that allows you to manage your clients effectively and team with maximum efficiency:</p>
+                 <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                       <div class="hexagon-icon-panel">
+                          <div class="hexagon-icon hexagon-icon-1"></div>
+                       </div>
+                       <h3>Safe</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                       <div class="hexagon-icon-panel">
+                          <div class="hexagon-icon hexagon-icon-2"></div>
+                       </div>
+                       <h3>Secure</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                       <div class="hexagon-icon-panel">
+                          <div class="hexagon-icon hexagon-icon-3"></div>
+                       </div>
+                       <h3>Connect </h3>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                       <div class="hexagon-icon-panel">
+                          <div class="hexagon-icon hexagon-icon-4"></div>
+                       </div>
+                       <h3>Analyze</h3>
+                    </div>
+                 </div>
+              </article>
+           </div>
+        </div>
+        <div class="crm-block">
+           <div class="row">
+              <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                 <div class="hexagon-panel">
+                    <div class="hexagon"></div>
+                    <div class="hexagon-content">
+                       <h2>Safe</h2>
+                       <p>Our advanced compliance and risk management system allow you to protect your business against fraud.Our advanced compliance and risk management system allow you to protect your business against fraud.</p>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-12">
+                 <p><a class="btn crm-block-btn">Call to Action</a></p>
+              </div>
+           </div>
+        </div>
+        <div class="crm-block">
+           <div class="row">
+              <div class="col-lg-4 col-md-5 pull-right col-sm-12 col-xs-12">
+                 <div class="hexagon-panel">
+                    <div class="hexagon"></div>
+                    <div class="hexagon-content">
+                       <h2>Secure</h2>
+                       <p>Our onsite security system automatically logs every action made on the site meaning that your data is secure.</p>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-12">
+                 <p><a class="btn crm-block-btn">Call to Action</a></p>
+              </div>
+           </div>
+        </div>
+        <div class="crm-block">
+           <div class="row">
+              <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                 <div class="hexagon-panel panel-orange">
+                    <div class="hexagon"></div>
+                    <div class="hexagon-content">
+                       <h2>Connect </h2>
+                       <p>Our state of the art API integration software and pixel management system makes connecting to marketing partners quick and easy as well as incredibly accurate</p>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-12">
+                 <p><a class="btn crm-block-btn">Call to Action</a></p>
+              </div>
+           </div>
+        </div>
+        <div class="crm-postblock">
+           <div class="row vertical-middle">
+              <div class="col-lg-4 col-md-5 pull-right col-sm-12 col-xs-12">
+                 <div class="hexagon-panel panel-orange">
+                    <div class="hexagon"></div>
+                    <div class="hexagon-content">
+                       <h2>Analyse  </h2>
+                       <p>Our in build reporting system allows you to measure every aspect of your businesses performance.</p>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-12">
+                 <p><a class="btn">Call to Action</a></p>
+              </div>
+           </div>
+        </div>
+     </section>
+     <div class="container">
+        <div class="row">
+           <div class="section-divider divider"></div>
+        </div>
+     </div>
+     <section class="container section-hex services-provided text-center">
+        <div class="row vertical-middle">
+           <article class="service-article col-md-10 col-md-offset-1">
+              <h2>Services Provided</h2>
+              <p>   With nearly 10 years’ experience in the binary options industry Beetech have a nearly unrivaled collection of contacts that we can connect you with our services include</p>
+              <div class="row">
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="hexagon-icon-panel">
+                       <div class="hexagon-icon hexagon-icon-5"></div>
+                    </div>
+                    <h3>Company structure</h3>
+                 </div>
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="hexagon-icon-panel">
+                       <div class="hexagon-icon hexagon-icon-6"></div>
+                    </div>
+                    <h3>Processing solutions</h3>
+                 </div>
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="hexagon-icon-panel">
+                       <div class="hexagon-icon hexagon-icon-7"></div>
+                    </div>
+                    <h3>Telephonic and infrastructure services</h3>
+                 </div>
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="hexagon-icon-panel">
+                       <div class="hexagon-icon hexagon-icon-8"></div>
+                    </div>
+                    <h3>Sales and marketing</h3>
+                 </div>
+              </div>
+           </article>
+        </div>
+     </section>
+     <footer class="container footer-divider text-center">
+        <div class="row">
+           <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+              <div class="payments payment-one"></div>
+              <div class="payments payment-two"></div>
+              <p class="copyright">All Right Reserved 2017</p>
+           </div>
+        </div>
+     </footer>
+  </div>
+  <!--[if lt IE 9]>
+  <script src="libs/html5shiv/es5-shim.min.js"></script>
+  <script src="libs/html5shiv/html5shiv.min.js"></script>
+  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+  <script src="libs/respond/respond.min.js"></script>
+  <![endif]-->
+
+  <script src="./jquery-1.11.2.min.js"></script>
+
+</body></html>

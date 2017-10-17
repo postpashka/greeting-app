@@ -1,0 +1,65 @@
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "OpenSansLight";
+	src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+.fontRobotoLight{
+	font-family: "RobotoLight", sans-serif;
+}
+
+.fontRobotoMedium{
+	font-family: "RobotoMedium", sans-serif;
+}
+
+.fontRobotoBold{
+	font-family: "RobotoBold", sans-serif;
+}
+
+.fontOpenSansLight{
+	font-family: "OpenSansLight", sans-serif;
+}
+
+.fontOpenSansRegular{
+	font-family: "OpenSansRegular", sans-serif;
+}
+
+.fontOpenSansBold{
+	font-family: "OpenSansBold", sans-serif;
+}

@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Conv_ProximaNova-Black';
+  src: url(../fonts/ProximaNova-Black.eot);
+  src: local("\263A"), url(../fonts/ProximaNova-Black.woff) format("woff"), url(../fonts/ProximaNova-Black.ttf) format("truetype"), url(../fonts/ProximaNova-Black.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_ProximaNova-Bold';
+  src: url(../fonts/ProximaNova-Bold.eot);
+  src: local("\263A"), url(../fonts/ProximaNova-Bold.woff) format("woff"), url(../fonts/ProximaNova-Bold.ttf) format("truetype"), url(../fonts/ProximaNova-Bold.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_ProximaNova-BoldIt';
+  src: url(../fonts/ProximaNova-BoldIt.eot);
+  src: local("\263A"), url(../fonts/ProximaNova-BoldIt.woff) format("woff"), url(../fonts/ProximaNova-BoldIt.ttf) format("truetype"), url(../fonts/ProximaNova-BoldIt.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_ProximaNova-Light';
+  src: url(../fonts/ProximaNova-Light.eot);
+  src: local("\263A"), url(../fonts/ProximaNova-Light.woff) format("woff"), url(../fonts/ProximaNova-Light.ttf) format("truetype"), url(../fonts/ProximaNova-Light.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_ProximaNova-LightIt';
+  src: url(../fonts/ProximaNova-LightIt.eot);
+  src: local("\263A"), url(../fonts/ProximaNova-LightIt.woff) format("woff"), url(../fonts/ProximaNova-LightIt.ttf) format("truetype"), url(../fonts/ProximaNova-LightIt.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_ProximaNova-Reg';
+  src: url(../fonts/ProximaNova-Reg.eot);
+  src: local("\263A"), url(../fonts/ProximaNova-Reg.woff) format("woff"), url(../fonts/ProximaNova-Reg.ttf) format("truetype"), url(../fonts/ProximaNova-Reg.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_ProximaNova-RegIt';
+  src: url(../fonts/ProximaNova-RegIt.eot);
+  src: local("\263A"), url(../fonts/ProximaNova-RegIt.woff) format("woff"), url(../fonts/ProximaNova-RegIt.ttf) format("truetype"), url(../fonts/ProximaNova-RegIt.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-family: 'Conv_ProximaNova-Reg'; }
+
+.font-light {
+  font-family: 'Conv_ProximaNova-Light'; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  font-size: 20px; }
+
+p {
+  font-size: 18px; }
+
+.font-small {
+  font-size: 14px; }
+
+input.form-control::placeholder {
+  font-family: 'Conv_ProximaNova-Light';
+  color: #fff; }
+
+input.form-control {
+  font-size: 16px; }
+
+.white-form input.form-control {
+  background-color: transparent;
+  color: #fff; }
+
+.white-form input.form-control::placeholder {
+  color: #fff; }
+
+.white-form a.form-btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff; }
+
+.white-form a.form-btn:hover {
+  background-color: transparent;
+  color: #fff; }
+
+.gray-form input.form-control {
+  background-color: #dedbdb;
+  color: #000; }
+
+.gray-form input.form-control::placeholder {
+  color: #000; }
+
+.gray-form .form-btn {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent; }
+
+.gray-form .form-btn:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.color-white {
+  color: #fff; }
+
+.color-gray {
+  color: #fafafa; }
+
+.color-light-gray {
+  color: #d6dae4; }
+
+.color-blue {
+  color: #46516d; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-bottom: 1px solid #fff; }
+
+header a {
+  padding: 40px 10px 20px;
+  display: inline-block; }
+
+header img {
+  padding: 20px 0; }
+
+.welcome {
+  background: url(../images/section1-bg.jpg) 50% 50%, #000;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.form-container {
+  position: relative;
+  padding-top: 320px;
+  padding-bottom: 420px; }
+
+form {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.form-btn {
+  border: 1px solid #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  transition: all .3s ease; }
+
+.future-history {
+  margin: -40px 0; }
+
+.future-history-card {
+  background-color: #fff;
+  padding: 90px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.64); }
+
+.future-history-image {
+  position: relative;
+  margin-top: -200px;
+  margin-bottom: -200px;
+  z-index: 1; }
+
+.contact-us {
+  padding: 90px 0;
+  background-image: url(../images/section3-bg.jpg);
+  background-size: cover; }
+
+footer {
+  padding: 60px 0 30px; }
+
+.sponsors {
+  overflow: hidden;
+  margin: 40px 0 60px; }
+
+.sponsors > img {
+  width: 220%; }
+
+@media only screen and (max-width: 1024px) {
+  .future-history-image {
+    margin-top: -100px;
+    margin-bottom: -100px; } }
+
+@media only screen and (max-width: 425px) {
+  .future-history-image {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .future-history-card {
+    padding: 20px; } }

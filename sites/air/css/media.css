@@ -1,0 +1,240 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1920px) {
+	h1{
+		font-size: 3.125rem;
+	}
+
+	.card-detail{
+		width: 700px;
+		right: -700px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1366px) {
+	h1{
+		font-size: 2.5rem;
+	}
+
+	.up-btn{
+		left: 100%;
+		margin-left: -80px;
+	}
+
+	.up-text{
+		display: none;
+	}
+
+	.up-arrow{
+		display: block;
+	}
+
+	.portfolio-card-section{
+		padding: 0px;
+	}
+
+	.open-detail,
+	.close-card{
+	    left: auto;
+	    right: 20px;
+	}
+
+	.card-detail{
+		width: 540px;
+		right: -540px;
+	}
+
+}/* Medium Devices, Desktops */
+
+@media only screen and (max-width : 1024px) {
+	.container {
+		width: 100%;
+	}
+
+	.img-colorless{
+		opacity: 0;
+	}
+
+	.colorfull-cover{
+		opacity: 1;
+	}
+
+	.blog-card-img{
+		padding: 30px 0;
+	}
+
+	.blog-list-post{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.blog-list-panel{
+		margin-left: -25px;
+	}
+
+	.blog-list-post p{
+		padding: 20px 0;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+	.col-panel{
+		padding: 0 5px;
+	}
+
+	.nav>li>a{
+		text-align: center;
+	}
+
+	.navbar-nav .open .dropdown-menu>li>a{
+		line-height: 1rem;
+	}
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.index-banner{
+		display: none;
+	}
+	.modile-logo{
+		display: inline-block;
+	}
+
+	.about img {
+		margin-bottom: -50%;
+		width: 100%;
+	}
+
+	.about-photo{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.card-detail{
+		width: 50%;
+		right: -50%;
+	}
+
+	.detail-panel{
+		margin-left: 0;
+		padding: 140px 20px;
+	}
+
+	.close-detail{
+		top: 80px;
+		right: 20px;
+		bottom: auto;
+		left: auto;
+	}
+
+	.list-menu{
+		margin: 0;
+	}
+
+	.list-menu-line{
+		display: none;
+	}
+
+	.list-menu a{
+		min-height: 66px;
+	}
+
+	.blog-list-panel{
+		margin-right: -25px;
+	}
+
+	.blog-list-post{
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
+	.read-more-post{
+		padding-top: 20px; 
+		padding-bottom: 40px; 
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+	.card-detail{
+		width: 100%;
+		right: -100%;
+	}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+
+@media only screen and (min-width : 768px) {
+
+}
+
+
+@media only screen and (min-width : 992px) {
+	.container {
+	    width: 1030px;
+	}
+
+
+}
+
+@media only screen and (min-width : 1366px) {
+
+	.up-btn{
+		left: 50%;
+		margin-left: 530px;
+	}
+
+	.up-text{
+		display: block;
+	}
+
+	.up-arrow{
+		display: none;
+	}
+}

@@ -1,0 +1,217 @@
+<html>
+
+    <head>
+        <title>web freestyle</title>
+    </head>
+
+    <body>
+        <style type="text/css">
+            .absolute {
+                position: absolute;
+            }
+            .absolute-center {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            .container {
+                height: 100%;
+                width: 100%;
+                background-color: #B9B9BF;
+            }
+            .eye {
+                width: 300px;
+                height: 150px;
+                background: #fff;
+                -moz-border-radius: 100px / 50px;
+                -webkit-border-radius: 100px / 50px;
+                border-radius: 50% / 50%;
+                -webkit-animation: clip 3s infinite;
+                /* Chrome, Safari, Opera */
+                animation: clip 3s infinite;
+            }
+            @-webkit-keyframes clip {
+                0%, 100% {
+                    height: 150px;
+                    width: 300px;
+                }
+                50% {
+                    height: 200px;
+                    width: 250px;
+                }
+            }
+            @keyframes clip {
+                0%, 100% {
+                    height: 150px;
+                    width: 300px;
+                }
+                50% {
+                    height: 200px;
+                    width: 250px;
+                }
+            }
+            @-webkit-keyframes slim {
+                0%, 100% {
+                    width: 20px;
+                }
+                33% {
+                    width: 10px;
+                }
+                50% {
+                    width: 5px;
+                }
+            }
+            @keyframes slim {
+                0%, 100% {
+                    width: 20px;
+                }
+                33% {
+                    width: 10px;
+                }
+                50% {
+                    width: 5px;
+                }
+            }
+            @-webkit-keyframes pupilMove {
+                0%, 100% {
+                    width: 140px;
+                }
+                50% {
+                    width: 130px;
+                }
+            }
+            @keyframes pupilMove {
+                0%, 100% {
+                    width: 140px;
+                }
+                50% {
+                    width: 130px;
+                }
+            }
+            .apple {
+                border-radius: 50% / 50%;
+                width: 150px;
+                height: 150px;
+                background-color: #4C91D6;
+            }
+            .pupil {
+                border-radius: 50% / 50%;
+                width: 140px;
+                height: 140px;
+                background-color: #4C91D6;
+                -webkit-animation: pupilMove 2s infinite;
+                /* Chrome, Safari, Opera */
+                animation: pupilMove 2s infinite;
+            }
+            .pupil-layer {
+                border-radius: 50% / 50%;
+            }
+            .highlight {
+                top: 0;
+                right: 20px;
+                bottom: 0;
+                margin: auto;
+                border-radius: 50% / 50%;
+                width: 20px;
+                height: 20px;
+                background-color: #D0DCF0;
+            }
+            .ray {
+                position: absolute;
+                margin: auto;
+                width: 20px;
+                height: 100px;
+                border-radius: 10px;
+                background-color: #fff;
+                -webkit-animation: slim 3s infinite;
+                /* Chrome, Safari, Opera */
+                animation: slim 3s infinite;
+            }
+            .ray.top, .ray.bottom {
+                left: 0;
+                right: 0;
+            }
+            .ray.left, .ray.right {
+                top: 0;
+                bottom: 0;
+            }
+            .ray.top {
+                top: -150px;
+            }
+            .ray.bottom {
+                bottom: -150px;
+            }
+            .ray.left {
+                left: -150px;
+                transform: rotate(1.57rad);
+            }
+            .ray.right {
+                right: -150px;
+                transform: rotate(1.57rad);
+            }
+            .top-left {
+                top: -100px;
+                left: -50px;
+                transform: rotate(-0.785rad);
+            }
+            .left-bottom {
+                left: -50px;
+                bottom: -100px;
+                transform: rotate(-2.365rad);
+            }
+            .bottom-right {
+                bottom: -100px;
+                right: -50px;
+                transform: rotate(2.365rad);
+            }
+            .right-top {
+                right: -50px;
+                top: -100px;
+                transform: rotate(0.785rad);
+            }
+            .layer1 {
+                width: 110px;
+                height: 55px;
+                left: -55px;
+                background-color: #3C6B99;
+                border-radius: 110px 110px 0 0;
+                transform: rotate(-1.57rad);
+            }
+            .layer2 {
+                width: 90px;
+                height: 90px;
+                background-color: #8FB4DD;
+            }
+            .layer3 {
+                width: 65px;
+                height: 65px;
+                background-color: #3F3F40;
+            }
+        </style>
+        <div class="container">
+            <div class="eye absolute-center">
+                <div class="ray top"></div>
+                <div class="ray top-left"></div>
+                <div class="ray left"></div>
+                <div class="ray left-bottom"></div>
+                <div class="ray bottom"></div>
+                <div class="ray bottom-right"></div>
+                <div class="ray right"></div>
+                <div class="ray right-top"></div>
+                <div class="pupil absolute-center">
+                    <div class="pupil-layer layer2 absolute-center"></div>
+                    <div class="layer1 absolute-center"></div>
+                    <div class="pupil-layer layer3 absolute-center"></div>
+                    <div class="highlight absolute"></div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </body>
+
+</html>

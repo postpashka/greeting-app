@@ -1,0 +1,288 @@
+@font-face {
+    font-family: "DroidKufi-Bold";
+    src: url("DroidKufi-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "DroidKufi-Regular";
+    src: url("DroidKufi-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body,
+html,
+p,
+h1,
+h2,
+h3,
+h4{
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    font-family: DroidKufi-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+}
+
+li{
+    position: relative;
+}
+
+li:after{
+    content: ' ';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    bottom: 0;
+    right: -26px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: linear-gradient(to top right, #efe4c9 0%, #c58f39 100%);
+}
+
+h2{
+    font-size: 1.75rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4, .font20{
+    font-size: 1.25rem;
+}
+
+.font14{
+    font-size: 0.875rem;
+}
+
+.logo{
+    max-width: 100%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.pull-left {
+    float: left
+}
+
+.pull-right {
+    float: right
+}
+
+.text-right {
+    text-align: right
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-center {
+    text-align: center
+}
+
+.orange-color{
+    color: #c08e38;
+}
+
+.title-block{
+    margin: 20px 0;
+}
+
+.white-color{
+    color: #fff;
+}
+
+.container{
+    max-width: 960px;
+    margin: auto;
+}
+
+.col{
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.col-33{
+    width: 33%;
+}
+
+.btn-gold{
+    width: 100%;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, #06d3ff 0%, #008bc8 100%);
+    border: 1px solid #004d91;
+    box-shadow: 0px 5px 7px 5px rgba(0,0,0,0.25);
+    outline: 1px solid rgba(255,255,255,0.5);
+    transition: all 0.5s ease-in-out;
+} 
+
+
+.btn-gold:hover{
+    box-shadow: 0px 5px 7px 5px rgba(0,0,0,0.5);
+}
+
+.btn-gold:active{
+    box-shadow: 0px 5px 7px 5px rgba(0,0,0,0.75);
+}
+
+main{
+    direction: rtl;
+    font-size: 1.5rem;
+}
+
+.page{
+    position: relative;
+}
+
+.page:before,
+.page:after{
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    background: url(bg3.jpg);
+}
+
+.page:before{
+    right: 100%;
+}
+
+.page:after{
+    left: 100%;
+    transform: scale(1, -1);
+}
+
+.title{
+    padding: 40px 40px 120px;
+    background: url(bg1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+form{
+    position: relative;
+    background-color: #000;
+}
+
+.form{
+    padding: 20px 0;
+    background: url(bg2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.form-frame{
+    padding: 5px;
+}
+
+.form-top{
+    position: relative;
+    top: -90px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.form-title{
+    line-height: 1.5;
+}
+
+.orange-gradient{
+    background-image: linear-gradient(to bottom, #dc9842 0%, #f7e5c5 50%, #dc9842 100%);
+    
+}
+
+::-webkit-input-placeholder {color:#888071; font-size: 1.5rem;}
+::-moz-placeholder          {color:#888071; font-size: 1.5rem;}/* Firefox 19+ */
+:-moz-placeholder           {color:#888071; font-size: 1.5rem;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#888071; font-size: 1.5rem;}
+
+input,
+select,
+option{
+    color: #888071;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: #adadad;
+}
+
+.form-row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-input{
+    height: 55px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.acceptInput{
+    margin: 5px;
+}
+
+footer {
+    font-family: Roboto,sans-serif;
+    background-color: #000;
+    color: #acacac;
+}
+
+.footer-col{
+    width: 75%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+@media only screen and (max-width : 768px) {
+
+
+    body,html {
+        font-size: 14px;
+    }
+
+    .col-33{
+        width: 50%;
+    }
+
+
+}
+@media only screen and (max-width : 425px) {
+
+
+    body,html {
+        font-size: 14px;
+    }
+
+    .col-33{
+        width: 100%;
+    }
+
+
+}

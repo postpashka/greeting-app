@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	
+
+</head>
+
+<body>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>	
+
+
+
+
+	<header id="header" class="index-header header-white text-center">
+		<div class="container clearfix">
+			<div class="col col-d-100 col-t-100 col-m-100">
+				<div class="logo-wrap pull-left">
+					<div class="clearfix">					
+						<div class="c-hamburger c-hamburger--htx">
+						  <span>toggle menu</span>
+						</div>				
+						 <div class="logo"><a href="./index.html">owell</a></div>
+					</div>
+				</div>
+				<div class="leave-order pull-right">
+					<span class="phone">+380 99 358 15 87</span>
+					<a class="btn btn-transparent ripple dark">Оставить заявку</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="./service-list.html">Услуги</a></li>
+						<li><a href="./portfolio-list.html">Портфолио</a></li>
+						<li><a href="./about-us.html">О наc</a></li>
+						<li><a href="./testimonials.html">Отзывы</a></li>
+						<li><a href="./blog-list.html">Блог</a></li>
+						<li><a href="./contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="breadcrumbs breadcrumbs-office">
+			<div class="bg-blue">			
+				<div class="container clearfix">
+					<div class="col col-d-100">
+						<div class="breadcrumbs-content">						
+							<ul class="onScreenVisibleSecond">
+								<li><a href="">Главная</a></li>
+								<li><span>Контакты</span></li>
+							</ul>
+							<h3 class="onScreenVisibleFirst">Контакты</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts">
+			<div class="container clearfix text-center">
+				<div class="contacts-contact col col-d-25 col-t-50 col-m-100">
+					<div class="contact-icon-wrap">
+						<div class="contacts-icon icon-phone ripple light"></div>
+					</div>
+					<div class="contacts-info">
+						<h4 class="contacts-title"> Телефоны </h4>
+						<ul class="contacts-info-list">
+							<li>+38 099 548-97-57</li>
+							<li>+38 099 548-97-57</li>
+						</ul>
+					</div>
+				</div>				
+				<div class="contacts-contact col col-d-25 col-t-50 col-m-100">
+					<div class="contact-icon-wrap">
+						<div class="contacts-icon icon-mail ripple light"></div>
+					</div>
+					<div class="contacts-info">
+						<h4 class="contacts-title"> Почта </h4>
+						<ul class="contacts-info-list">					
+							<li>zakaz@owell-group.com</li>
+							<li>info@owell-group.com</li>
+						</ul>
+					</div>
+				</div>				
+				<div class="contacts-contact col col-d-25 col-t-50 col-m-100">
+					<div class="contact-icon-wrap">
+						<div class="contacts-icon icon-work ripple light"></div>
+					</div>
+					<div class="contacts-info">
+						<h4 class="contacts-title"> Режим работы </h4>
+						<ul class="contacts-info-list">						
+							<li>Пн-Пт: С 10:00 до 19:00</li>
+							<li>Сб-Вс: Выходной</li>
+						</ul>
+					</div>
+				</div>				
+				<div class="contacts-contact col col-d-25 col-t-50 col-m-100">
+					<div class="contact-icon-wrap">
+						<div class="contacts-icon icon-messages ripple light"></div>
+					</div>
+					<div class="contacts-info">
+						<h4 class="contacts-title"> Месенджеры </h4>
+						<ul class="contacts-info-list">					
+							<li>+38 099 548-97-57</li>
+							<li>+38 099 548-97-57</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+			<div id="requestForm"></div>
+		</section>
+		<section class="map">
+			<div id="map"></div>
+			<div class="feedback-panel">
+				<form>
+					<div class="clearfix">
+						<div class="col col-d-100 col-t-100 col-m-100">					
+							<div>
+								<span class="form-title">Напишите нам</span>
+							</div>
+							<label for="name">Ваше имя</label>
+							<input type="text" id="name" placeholder="Как к вам обращаться" required="">
+							<label for="email">Электронная почта</label>
+							<input type="email" id="email" placeholder="имя@mail.com" required="">
+							<label for="phone">Телефон</label>
+							<input type="tel" id="phone" placeholder="">
+							<label for="message">Сообщение</label>
+							<textarea id="message" placeholder="ВВедите текст сообщения" required=""></textarea>
+							<div class="form-group">
+								<button class="btn btn-green feedback-panel-btn ripple light" type="submit">Отправить</button>
+							</div>
+						</div>
+					</div>
+					
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="container clearfix">
+				<div class="col col-d-50 col-t-100 col-m-100">
+					<div class="row clearfix">
+						<div class="col col-d-50 col-t-50 col-ml-50 col-m-100">
+							<h4>Навигация</h4>
+							<ul>
+								<li><a href="./index.html">Главная</a></li>
+								<li><a href="./service-list.html">Услуги</a></li>
+								<li><a href="./portfolio-list.html">Портфолио</a></li>
+								<li><a href="./about-us.html">О наc</a></li>
+								<li><a href="./testimonials.html">Отзывы</a></li>
+								<li><a href="./blog-list.html">Блог</a></li>
+								<li><a href="./contacts.html">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="col col-d-50 col-t-50 col-ml-50 col-m-100">
+							<h4>Наши услуги</h4>
+							<ul>
+								<li><a href="./service-item.html">Разработка сайтов</a></li>
+								<li><a href="./service-item.html">Продвижение сайтов</a></li>
+								<li><a href="./service-item.html">Дизайн сайтов</a></li>
+								<li><a href="./service-item.html">SEO-аудит сайта</a></li>
+								<li><a href="./service-item.html">Копирайтинг</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col col-d-50 col-t-100 col-m-100">
+					<div class="row clearfix">						
+						<div class="col col-d-50 col-t-50 col-ml-50 col-m-100">
+							<h4>Контакты</h4>
+							<ul>
+								<li>info@owell-group.com</li>
+								<li>+38 (099) 234-54-65</li>
+								<li>+38 (099) 234-54-61</li>
+							</ul>
+						</div>
+						<div class="col col-d-50 col-t-50 col-ml-50 col-m-100">
+							<h4 class="footer-logo">Owell</h4>
+							<p class="copyrights">© 2016 owell-group.com</p>
+							<div class="row">
+								<a id="fb" class="ripple light"></a>
+								<a id="tw" class="ripple light"></a>
+								<a id="ln" class="ripple light"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+
+	<script>
+	  function initMap() {
+	  	
+	    var uluru2 = {lat: 46.641, lng: 32.604};
+	    var uluru = {lat: -25.363, lng: 131.044};
+	    var map = new google.maps.Map(document.getElementById('map'), {
+	      zoom: 15,
+	      center: uluru2,
+	      scrollwheel: false,
+	      navigationControl: false,
+	      mapTypeControl: false,
+	      scaleControl: false,
+	      mapTypeId: google.maps.MapTypeId.ROADMAP
+	    });
+	    var marker = new google.maps.Marker({
+	      position: uluru2,
+	      map: map
+	    });
+	  }
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN7c-sXLwbncXUBixXjrAS_KF5L17RRzM&callback=initMap">
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.2.1/lory.min.js"></script>
+	<script src='./js/common.js'></script>
+</body>
+</html>
+

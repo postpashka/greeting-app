@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Elit2ds_ray</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+	<!-- Здесь пишем код -->
+	
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<div class="bg"></div>
+
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+		<div class="header-top">
+			<div class="container">
+				<div class="d-table">
+					<div class="vcenter">
+						<div class="row text-center">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<a href="./index.html" class="logo gradient-text">Elit2ds_ray</a>
+							</div>
+							<div class="col-md-6 hidden-sm hidden-xs">
+								<div class="d-inline-block text-left">
+									<ul class="advantages text-uppercase">
+										<li>Free <br>registration</li>
+										<li>Easy <br>profile setup</li>
+										<li>Easy <br>promotion</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class=" d-inline-block text-left text-uppercase">
+									<div class="language">Choose your language</div>
+									<div class="flags-select">
+										<label for="flag">
+											<input type="radio" name="flags" id="flag" aria-invalid="false">
+											<div class="flag-icon flag-Belgium"></div>
+										</label>
+										<label for="flag1">
+											<input type="radio" name="flags" id="flag1" aria-invalid="false" checked>
+											<div class="flag-icon flag-United-Kingdom"></div>
+										</label>
+										<label for="flag2">
+											<input type="radio" name="flags" id="flag2" aria-invalid="false">
+											<div class="flag-icon flag-Netherlands"></div>
+										</label>
+										<label for="flag3">
+											<input type="radio" name="flags" id="flag3" aria-invalid="false">
+											<div class="flag-icon flag-Turkey"></div>
+										</label>
+										<label for="flag4">
+											<input type="radio" name="flags" id="flag4" aria-invalid="false">
+											<div class="flag-icon flag-Georgia"></div>
+										</label>
+										<label for="flag5">
+											<input type="radio" name="flags" id="flag5" aria-invalid="false">
+											<div class="flag-icon flag-Greece"></div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+		    <div class="container">
+		        <!-- Brand and toggle get grouped for better mobile display -->
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		        </div>
+		        <!-- Collect the nav links, forms, and other content for toggling -->
+
+		        <div class="collapse navbar-collapse text-uppercase" id="bs-example-navbar-collapse-1">
+		            <ul class="nav navbar-nav">
+		                <li>
+		                    <a href="./index.html">Home</a>
+		                </li>
+		                <li>
+		                    <a href="./countries.html">Countries</a>
+		                </li>
+		                <li>
+		                    <a href="#">Contacts</a>
+		                </li>
+		                <li>
+		                    <a class="reg-red-btn">Registration</a>
+		                </li>
+		            </ul>
+		        </div>
+		        <!-- /.navbar-collapse -->
+		    </div>
+		</div>
+	    <!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<div class="breadcrumbs">
+			<span class="orange">
+				<a href="./index.html">Home</a>
+				<a href="./countries.html">Countries</a>
+				<a href="./sities.html">Cities</a>
+			</span>
+			<span class="gray">Girls in Turkey, Ankara</span>
+		</div>
+		<span class="page-title orange">Girls in Turkey, Ankara</span>
+	</div>
+
+
+	<div class="container">
+		<form class="select-panel form-horizontal">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+					<div class="form-group">     		
+				    	<label for="country" class="col-md-4 col-sm-4 col-xs-3 control-label gray text-uppercase text-right">Country:</label>
+				    	<div class="col-md-8 col-sm-8 col-xs-9">
+							<div class="custom-select">
+								<select class="form-control text-uppercase" id="country">
+									<option>Belgium</option>
+									<option>United</option>
+									<option>Netherlands</option>
+									<option>Turkey</option>
+									<option>Georgia</option>
+									<option>Greece</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-12">
+					<div class="form-group">  
+				    	<label for="city" class="col-md-4 col-sm-4 col-xs-3 control-label gray text-uppercase text-right">City:</label>
+				    	<div class="col-md-8 col-sm-8 col-xs-9">
+							<div class="custom-select">
+								<select class="form-control text-uppercase" id="city">
+									<option>Ankara</option>
+									<option>Ankara</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-3">
+					<div class="form-group">
+					    	<label for="sort" class="col-md-4 col-sm-4 col-xs-3 control-label gray text-uppercase text-right">Sort:</label>
+					    	<div class="col-md-8 col-sm-8 col-xs-9">
+								<div class="custom-select">
+									<select class="form-control text-uppercase" id="sort">
+										<option>Highest rating</option>
+										<option>Most viewed</option>
+									</select>
+								</div>
+							</div>
+				    </div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="container">
+		<div class="list-items clearfix text-center">
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/1.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">						
+					<span class="item-title text-uppercase">Pelin Altinok</span><br>
+					<span>Amsterdam</span>
+				</div>
+			</div>
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/2.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">
+					<span class="item-title text-uppercase">Maria Huanna</span><br>
+					<span>Istanbul</span>
+				</div>
+			</div>
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/3.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">
+					<span class="item-title text-uppercase">Pelin Altinok</span><br>
+					<span>Amsterdam</span>
+				</div>
+			</div>
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/4.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">
+					<span class="item-title text-uppercase">Maria Huanna</span><br>
+					<span>Istanbul</span>
+				</div>
+			</div>
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/5.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">
+					<span class="item-title text-uppercase">Pelin Altinok</span><br>
+					<span>Amsterdam</span>
+				</div>
+			</div>
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/6.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">
+					<span class="item-title text-uppercase">Maria Huanna</span><br>
+					<span>Istanbul</span>
+				</div>
+			</div>
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/7.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">
+					<span class="item-title text-uppercase">Pelin Altinok</span><br>
+					<span>Amsterdam</span>
+				</div>
+			</div>
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/8.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">
+					<span class="item-title text-uppercase">Maria Huanna</span><br>
+					<span>Istanbul</span>
+				</div>
+			</div>
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/9.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">
+					<span class="item-title text-uppercase">Pelin Altinok</span><br>
+					<span>Amsterdam</span>
+				</div>
+			</div>
+			<div class="list-item item20">
+				<div class="img-wrap">
+					<img src="./img/girls/10.jpg">
+					<div class="item-bg"><a href="./girl.html" class="btn-transparent">View girl</a></div>
+				</div>
+				<div class="item-desc">
+					<span class="item-title text-uppercase">Maria Huanna</span><br>
+					<span>Istanbul</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container seo">
+			<h2 class="orange page-title">Only high quality escorts from Greece, Holland, Belgium, Turkey, London!</h2>
+			<p>Golden Angels is an advertising and information resource, and as such has no connection or liability with any of the sites or individuals mentioned here. We ONLY sell advertisment space, we are not an escort agency, nor we are in any way involved in escorting or prostitution business. We take no responsibility for the content or actions of third party websites or individuals that you may access following links, email or phone contacts from this portal. Golden Angels is an advertising and information resource, and as such has no connection or liability with any of the sites or individuals mentioned here. We ONLY sell advertisment space, we are <a href="#" class="orange">not an escort agency</a>, nor we are in any way involved in escorting or prostitution business. We take no responsibility for the content or actions of third party websites or individuals that you may access following links, email or phone contacts from this portal. Golden Angels is an advertising and information resource, and as such has no connection or liability with any of the sites or individuals mentioned here. We ONLY sell advertisment space, we are not an escort agency, nor we are in any way involved in escorting or prostitution business.</p>
+			<p>Golden Angels is an advertising and information resource, and as such has no connection or liability with any of the sites or individuals mentioned here. We ONLY sell advertisment space, we are not an escort agency, nor we are in any way involved in escorting or prostitution business. We take no responsibility for the content or actions of third party websites or individuals that you may access following links, email or phone contacts from this portal.</p>
+		</div>
+		<div class="footer-nav">		
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 col-xs-12">
+						<a href="./index.html" class="logo gradient-text">Elit2ds_ray</a><br>
+						<a href="./sitemap" class="orange footer-link">sitemap</a>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<span class="footer-title text-uppercase">Main menu</span>
+						<ul class="orange">
+							<li><a href="./index.html" class="footer-link">Home</a></li>
+							<li><a href="./countries.html" class="footer-link">Countries</a></li>
+							<li><a href="#" class="footer-link">Contacts</a></li>
+						</ul>		
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<span class="footer-title text-uppercase">Information</span>
+						<ul class="orange">
+							<li><a href="#" class="footer-link">Refund and Cancellation Policy</a></li>
+							<li><a href="#" class="footer-link">Terms and Conditions</a></li>
+							<li><a href="#" class="footer-link">News & Updates</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<span class="footer-title text-uppercase">Contacts</span>
+						<ul class="orange">
+							<li>Phone: +7-911-701-88-92</li>
+							<li>Phone: +7-911-701-88-50</li>
+							<li>elitmodels_ray@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyrights text-center orange">© 2016 www.site.com - Find Luxury Escort Near You</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script src="js/common.js"></script>	
+</body>
+</html>

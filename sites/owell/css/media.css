@@ -1,0 +1,266 @@
+
+@media only screen and (max-width : 1024px) {
+
+    .titles {
+        padding: 0 20px;
+        max-width: 650px;
+    }
+
+    .title-big{
+        font-size: 4rem;
+    }
+
+    .sub-title{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    .col-m-100 {
+        width:100%
+    }
+
+    .col-m-50 {
+        width: 50%
+    }
+
+    .js_slide {
+        width: 100%
+    }
+}
+
+
+@media only screen and (max-width : 992px) {
+
+    .blogpost-preview-large .preview-title{
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+
+    .titles {
+        max-width: 320px;
+    }
+
+    .title-big{
+        font-size: 2rem;
+    }
+
+    .sub-title{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .round-tabs{
+        width: 320px;
+        height: 320px;
+    }
+
+    .c-hamburger {
+        display: inline-block;
+    }
+
+    
+    .logo{
+        padding: 0px;
+    }
+
+    .service-panel{
+        padding: 20px;
+    }
+
+    .service-title{
+        position: relative;
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+    }
+
+    .service-icons{
+        margin: 20px;
+        opacity: 0.5;
+        width: 80px;
+        height: 80px;
+        
+    }
+
+
+    header{
+        padding: 20px 0;
+    }
+
+    header nav{
+        display: block;
+        float: left;
+        width: 100%;
+        padding:  0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out
+    }
+
+    header nav.is-active{
+        max-height: 300px;
+    }
+
+    header nav li{
+        display: block;
+    
+    }
+
+    .leave-order,
+    .logo-wrap{
+        width: 100%;
+    }
+
+
+    .green-block{
+        width: 100%;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+
+    .blogpost-preview-large .preview-title{
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+    }
+
+
+    .blogpost-preview-large .blogpost-stat{
+        display: none;
+
+    }
+
+    .last-articles,
+    aside{
+        padding: 25px 0;
+    }
+
+    .feedback-panel{
+        left: 0;
+        width: 80%;
+        padding: 35px 15px;
+        margin: 50px auto;
+    }
+
+    .animated {
+        -o-transition-property:none!important;
+        -moz-transition-property: none!important;
+        -ms-transition-property: none!important;
+        -webkit-transition-property: none!important;
+        transition-property: none!important;
+        -o-transform: none!important;
+        -moz-transform: none!important;
+        -ms-transform: none!important;
+        -webkit-transform: none!important;
+        transform: none!important;
+        -webkit-animation: none!important;
+        -moz-animation: none!important;
+        -o-animation: none!important;
+        -ms-animation: none!important;
+        animation: none!important
+    }
+}
+
+@media only screen and (max-width : 425px) {
+
+    h2 {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    .bg-halfgray {
+        background: linear-gradient(to bottom,#fff 0,#fff 40%,#f6f6f6 40%,#f6f6f6 100%);
+    }
+
+}
+
+@media only screen and (max-width : 320px) {
+
+    .col-m-100 {
+        width:100%
+    }
+
+    .col-m-50 {
+        width: 50%
+    }
+
+    .js_slide {
+        width: 100%
+    }
+}
+
+@media only screen and (min-width : 320px) {
+    
+    .col-m-100 {
+        width:100%
+    }
+
+    .col-m-50 {
+        width: 50%
+    }
+
+    .js_slide {
+        width: 100%
+    }
+}
+
+@media only screen and (min-width : 425px) {
+    
+    .col-ml-100 {
+        width:100%
+    }
+
+    .col-ml-50 {
+        width: 50%
+    }
+
+    .js_slide {
+        width: 100%
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    .col-t-100 {
+        width:100%
+    }
+
+    .col-t-50 {
+        width: 50%
+    }
+
+
+    .js_slide {
+        width: 50%
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    .col-d-100 {
+        width:100%
+    }
+
+    .col-d-75 {
+        width: 75%
+    }
+
+    .col-d-50 {
+        width: 50%
+    }
+
+    .col-d-33 {
+        width: 33%
+    }
+
+    .col-d-25 {
+        width: 25%
+    }
+
+    .js_slide {
+        width: 33.3%
+    }
+}

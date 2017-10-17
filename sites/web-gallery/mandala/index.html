@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:8080/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>mandala</title>
+	
+
+<style type="text/css">
+	html, body {
+	  height: 100%;
+	  color: #000;
+	  font-size: 16px;
+	  min-width: 320px;
+	  position: relative;
+	  line-height: 1.6;
+	  font-family: RobotoRegular, sans-serif;
+	  font-weight: 400;}
+
+	.container {
+	  position: relative;
+	  width: 50%;
+	  margin: auto;
+	  top: 50%;
+	  transform: perspective(1px) translateY(-50%); }
+
+	.wrapper {
+	  width: 100%;
+	  padding-bottom: 100%;
+	  box-shadow: 0px 10px 20px;
+	  background-color: rgba(0, 0, 255, 0.25);}
+
+	.panel-0-deg {
+	  transform: rotate(0deg); }
+
+	.panel-45-deg {
+	  transform: rotate(45deg); }
+
+	.panel {
+	  position: absolute;
+	  height: 100%;
+	  width: 100%;
+	  top: 0px;
+	  right: 0px;
+	  left: 0px;
+	  bottom: 0px;
+	  margin: auto; 
+      overflow: hidden;}
+
+	.elem-base {
+	  top: 0;
+	  position: absolute;
+	  height: 100%;
+	  width: 100%; }
+
+	.elem-base-bottom {
+	  transform: rotate(0deg); }
+
+	.elem-base-left {
+	  transform: rotate(90deg); }
+
+	.elem-base-top {
+	  transform: rotate(180deg); }
+
+	.elem-base-right {
+	  transform: rotate(270deg); }
+
+	.elem {
+	  position: relative;
+	  margin: auto;
+	  width: 50%;
+	  height: 50%;
+	  left: 0%;
+	  right: 0;
+	  border-bottom-color: transparent;
+	  border-left-color: transparent;
+	  border-radius: 50%;
+	  box-sizing: border-box;
+	  background-size: 200%;
+	  animation: AnimationNameOne 5s ease infinite, AnimationNameTwo 3s ease infinite; }
+
+	.bg-rainbow-one .elem {
+	  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5) 0%, rgba(255, 255, 0, 0.5) 15%, rgba(0, 255, 0, 0.5) 30%, rgba(0, 255, 255, 0.5) 50%, rgba(0, 0, 255, 0.5) 65%, rgba(255, 0, 255, 0.5) 80%, rgba(255, 0, 0, 0.5) 100%); }
+
+	.bg-rainbow-two .elem {
+	  background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5) 0%, rgba(0, 255, 0, 0.5) 25%, rgba(255, 0, 0, 0.5) 50%, rgba(0, 0, 255, 0.5) 100%); }
+
+	.bg-rainbow-one-invert .elem {
+	  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 255, 0.5) 15%, rgba(0, 255, 255, 0.5) 30%, rgba(0, 255, 0, 0.5) 50%, rgba(0, 0, 255, 0.5) 65%, rgba(255, 255, 0, 0.5) 80%, rgba(255, 0, 0, 0.5) 100%); }
+
+	.bg-rainbow-two-invert .elem {
+	  background-image: linear-gradient(to right, rgba(0, 0, 255, 0.5) 0%, rgba(255, 0, 0, 0.5) 25%, rgba(0, 255, 0, 0.5) 50%, rgba(0, 0, 255, 0.5) 100%); }
+
+	.elem:after {
+	  content: ' ';
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  top: 0px;
+	  right: 0px;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-radius: 50%;
+	  transform: rotate(45deg);
+	  box-sizing: border-box;
+	  animation: AnimationNameThree 5s ease infinite; }
+
+	.elem-base-rotate-right .elem {
+	  top: 50%;
+	  bottom: 0;
+	  transform: rotate(-90deg); }
+
+	.elem-base-rotate-left .elem {
+	  top: 0%;
+	  bottom: 50%;
+	  transform: rotate(90deg); }
+
+	.elem-base-rotate-right .elem:after {
+	  border-color: transparent transparent black transparent; }
+
+	.elem-base-rotate-left .elem:after {
+	  border-color: transparent transparent transparent black; }
+
+	@keyframes AnimationNameOne {
+	  0% {
+	    background-position: 0% 50%; }
+	  50% {
+	    background-position: 100% 50%; }
+	  100% {
+	    background-position: 0% 50%; } }
+
+	@keyframes AnimationNameTwo {
+	  0% {
+	    width: 25%;
+	    height: 25%; }
+	  50% {
+	    width: 50%;
+	    height: 50%; }
+	  100% {
+	    width: 25%;
+	    height: 25%; } }
+
+	@keyframes AnimationNameThree {
+	  0% {
+	    width: 100%;
+	    height: 100%; }
+	  50% {
+	    width: 200%;
+	    height: 200%; }
+	  100% {
+	    width: 100%;
+	    height: 100%; } }
+
+</style>
+
+<body>
+    <script src="./mandala_files/jquery.min.js.Без названия"></script>
+    <!-- 	<script src='./assets/libs/jquery/jquery-1.11.2.min.js'></script> -->
+
+    <script type="text/javascript" src="./mandala_files/app.bundle.js.Без названия"></script>
+    <div class="container">
+        <div class="wrapper">
+            <div class="panel panel-0-deg">
+                <div class="elem-base elem-base-top elem-base-rotate-right bg-rainbow-one">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-bottom elem-base-rotate-right bg-rainbow-one">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-left elem-base-rotate-right bg-rainbow-one-invert">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-right elem-base-rotate-right bg-rainbow-one-invert">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-top elem-base-rotate-left bg-rainbow-two">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-bottom elem-base-rotate-left bg-rainbow-two">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-left elem-base-rotate-left bg-rainbow-two-invert">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-right elem-base-rotate-left bg-rainbow-two-invert">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <div class="panel panel-45-deg">
+                <div class="elem-base elem-base-top elem-base-rotate-right bg-rainbow-one">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-bottom elem-base-rotate-right bg-rainbow-one">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-left elem-base-rotate-right bg-rainbow-one-invert">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-right elem-base-rotate-right bg-rainbow-one-invert">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-top elem-base-rotate-left bg-rainbow-two">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-bottom elem-base-rotate-left bg-rainbow-two">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-left elem-base-rotate-left bg-rainbow-two-invert">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elem-base elem-base-right elem-base-rotate-left bg-rainbow-two-invert">
+                    <div class="elem">
+                        <div class="elem">
+                            <div class="elem">
+                                <div class="elem">
+                                    <div class="elem">
+                                        <div class="elem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
