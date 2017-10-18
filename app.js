@@ -2081,7 +2081,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_tabs__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_ripple__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_form__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_mousewheel__ = __webpack_require__(12);
 
 
 __webpack_require__(4);
@@ -2096,15 +2095,10 @@ __webpack_require__(4);
 
 
 
-// import Blazy from "blazy";
-
 window.onload = function() {
   var tabs = new __WEBPACK_IMPORTED_MODULE_0__components_tabs__["a" /* default */]();
   var ripple = new __WEBPACK_IMPORTED_MODULE_1__components_ripple__["a" /* default */]();
   var form = new __WEBPACK_IMPORTED_MODULE_2__components_form__["a" /* default */]();
-  var mousewheel = new __WEBPACK_IMPORTED_MODULE_3__components_mousewheel__["a" /* default */]();
-  var exampleDestination = document.querySelector('.card__image');
-  var exampleDestination2 = document.querySelector('.three-d-grid');
   var lazy = document.getElementsByClassName('lazy');
   var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   var viewport = (width < 768) ? 'data-mobile-src' : 'data-src';
@@ -2168,10 +2162,6 @@ Element.prototype.removeClass = function (classToRemove) {
 
 var Tabs = (function(window, undefined) {
 
-
-  // var panel1 = new cardsPanel('.cardPanel1');
-  // var panel2 = new cardsPanel('.cardPanel2');
-
   var tabsNav = document.getElementsByClassName('tabs-nav');
   var panels = [];
   var isTabActive = false;
@@ -2186,11 +2176,7 @@ var Tabs = (function(window, undefined) {
       }
       nav.onclick = _bindTab.bind(this, target, panels);
     });
-    // todo onInit hideAllCards set Duration to 0
     document.querySelector('*[data-target="cardPanel1"]').click();
-    // setTimeout( function(){
-    // }, 1000);
-    // the code
 
     
   };
@@ -10875,7 +10861,7 @@ var Form = (function(window, undefined) {
   function iframeOnLoad(target){
     if(submitted) {
       var tween = TweenLite.to(submit, 0.4, {
-        clearProps: 'all',
+        backgroundColor: '#64dd17',
         ease: Power2.easeOut
       });
       TL.add(tween);
@@ -10907,61 +10893,6 @@ var Form = (function(window, undefined) {
 })(window);
 
 /* harmony default export */ __webpack_exports__["a"] = (Form);
-
-/***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-
-
-
-var Mousewheel = (function(window, undefined) {
-	var supportsWheel = false;
-	
-	var scrollContent = document.querySelectorAll('.card__image');
-	function DoSomething (e) {
-	  if (e.type == "wheel") supportsWheel = true;
-	  else if (supportsWheel) return;
-	  var scrollTime = 1.2;
-	  var scrollDistance = 300;
-	  var delta = ((e.deltaY || -e.wheelDelta || e.detail) >> 10) || 1;
-	  var scrollTop = this.scrollTop;
-	  var finalScroll = scrollTop - parseInt(-delta*scrollDistance);
-
-	  TweenMax.to(
-	      this,
-	      scrollTime,
-	      {
-	      scrollTo:
-	          {y:finalScroll, autoKill:false},
-	          ease:Power1.easeOut,
-	          overwrite:5                         
-	      }
-	  );   
-	}
-
-	Array.prototype.forEach.call(scrollContent, function(sCont){
-		sCont.addEventListener('wheel', DoSomething);
-		sCont.addEventListener('mousewheel', DoSomething);
-		sCont.addEventListener('DOMMouseScroll', DoSomething);
-	});
-
-	// var wrapper = document.querySelector('.wrappers');
-	// wrapper.addEventListener('wheel', DoSomething);
-	// wrapper.addEventListener('mousewheel', DoSomething);
-	// wrapper.addEventListener('DOMMouseScroll', DoSomething);
-
-  function Mousewheel(){
-
-  }
-
-  return Mousewheel;
-
-})(window);
-
-/* harmony default export */ __webpack_exports__["a"] = (Mousewheel);
 
 /***/ })
 /******/ ]);
