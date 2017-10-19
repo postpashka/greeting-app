@@ -2163,6 +2163,7 @@ Element.prototype.removeClass = function (classToRemove) {
 var Tabs = (function(window, undefined) {
 
   var tabsNav = document.getElementsByClassName('tabs-nav');
+  var wrappers = document.querySelector('.wrappers');
   var panels = [];
   var isTabActive = false;
   var activeTab = '';
@@ -2185,6 +2186,11 @@ var Tabs = (function(window, undefined) {
   function _bindTab (target, panels, e) {
     var sequence = new TimelineLite({paused: true});
     if (activeTab != '') {
+      sequence.add(
+        __WEBPACK_IMPORTED_MODULE_0_gsap__["TweenLite"].to(wrappers, (wrappers.scrollTop/100) , {
+          scrollTo: { y: 0 },
+          ease: Power2.easeOut
+        }));
       sequence.add(panels[activeTab]._showHidePanel(true));
     }
     if (target == activeTab) {
@@ -10861,7 +10867,7 @@ var Form = (function(window, undefined) {
   function iframeOnLoad(target){
     if(submitted) {
       var tween = TweenLite.to(submit, 0.4, {
-        backgroundColor: '#64dd17',
+        background: '#64dd17',
         ease: Power2.easeOut
       });
       TL.add(tween);
@@ -10876,7 +10882,7 @@ var Form = (function(window, undefined) {
       ease: Power2.easeOut
     });
     var tweenSubmit = TweenLite.to(submit, 0.4, {
-      backgroundColor: 'yellow',
+      background: 'yellow',
       ease: Power2.easeOut
     });
     TL.add(tweenSubmit);
