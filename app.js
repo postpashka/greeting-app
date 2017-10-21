@@ -2186,11 +2186,11 @@ var Tabs = (function(window, undefined) {
   function _bindTab (target, panels, e) {
     var sequence = new TimelineLite({paused: true});
     if (activeTab != '') {
-      sequence.add(
-        __WEBPACK_IMPORTED_MODULE_0_gsap__["TweenLite"].to(wrappers, (wrappers.scrollTop/100) , {
+/*      sequence.add(
+        TweenLite.to(wrappers, (wrappers.scrollTop/100) , {
           scrollTo: { y: 0 },
           ease: Power2.easeOut
-        }));
+        }));*/
       sequence.add(panels[activeTab]._showHidePanel(true));
     }
     if (target == activeTab) {
