@@ -40,7 +40,10 @@ function generateCmdString()
        var before = new Date();
 
       g_commands = lsys.generate();
-
+      if (g_commands.length > 3000){
+        updateStatus("Warning: To large data, try something else");
+        return false
+      } 
 	  var after = new Date();
 	  
       updateStatus("Commands: " + g_commands.length + " in " + (after - before) + "ms. Calculating offsets...", renderCmds);
