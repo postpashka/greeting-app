@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="page-index" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>
+    </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css?v=1510550074004">
+  </head>
+  <body>
+    <div class="theme-container mdc-theme--light">
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-12">
+            <div id="dynamic-demo-toolbar">
+              <nav class="mdc-tab-bar mdc-tab-bar--indicator-accent" id="dynamic-tab-bar" role="tablist"><a class="mdc-tab mdc-tab--active" role="tab" aria-controls="panel-1" href="#panel-1">Item One</a><a class="mdc-tab" role="tab" aria-controls="panel-2" href="#panel-2">Item Two</a><a class="mdc-tab" role="tab" aria-controls="panel-3" href="#panel-3">Item Three</a><span class="mdc-tab-bar__indicator"></span></nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panels">
+        <div class="active panel" id="panel-1" role="tabpanel" aria-hidden="false">
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-12">
+                <h2>Vind de webshop met de laagste prijs</h2>
+              </div>
+            </div>
+          </div>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet">
+                <div class="mdc-card">
+                  <div class="mdc-card__primary">
+                    <div class="mdc-list-group"><a class="mdc-list-item" href="#" data-mdc-auto-init="MDCRipple"><i class="material-icons">keyboard_arrow_right</i>    Verzendmethode</a>
+                      <ul class="mdc-list">
+                        <li class="mdc-list-item">
+                          <div class="mdc-radio">
+                            <input class="mdc-radio__native-control" id="radio-1" type="radio" name="radios" checked="">
+                            <div class="mdc-radio__background">
+                              <div class="mdc-radio__outer-circle"></div>
+                              <div class="mdc-radio__inner-circle"></div>
+                            </div>
+                          </div>
+                          <label id="radio-1-label" for="radio-1">Opsturen</label>
+                        </li>
+                        <li class="mdc-list-item">
+                          <div class="mdc-radio">
+                            <input class="mdc-radio__native-control" id="radio-2" type="radio" name="radios">
+                            <div class="mdc-radio__background">
+                              <div class="mdc-radio__outer-circle"></div>
+                              <div class="mdc-radio__inner-circle"></div>
+                            </div>
+                          </div>
+                          <label id="radio-2-label" for="radio-2">Afhalen</label>
+                        </li>
+                        <li class="mdc-list-item">
+                          <div class="mdc-radio">
+                            <input class="mdc-radio__native-control" id="radio-3" type="radio" name="radios" checked="">
+                            <div class="mdc-radio__background">
+                              <div class="mdc-radio__outer-circle"></div>
+                              <div class="mdc-radio__inner-circle"></div>
+                            </div>
+                          </div>
+                          <label id="radio-3-label" for="radio-3">Koerier</label>
+                        </li>
+                        <li class="mdc-list-item">
+                          <div class="mdc-radio">
+                            <input class="mdc-radio__native-control" id="radio-4" type="radio" name="radios">
+                            <div class="mdc-radio__background">
+                              <div class="mdc-radio__outer-circle"></div>
+                              <div class="mdc-radio__inner-circle"></div>
+                            </div>
+                          </div>
+                          <label id="radio-4-label" for="radio-4">Rembours</label>
+                        </li>
+                      </ul>
+                      <hr class="mdc-list-divider"><a class="mdc-list-item" href="#" data-mdc-auto-init="MDCRipple"><i class="material-icons">keyboard_arrow_right</i>    Opsturen</a>
+                      <ul class="mdc-list">
+                        <li class="mdc-list-item list-item-slider">
+                          <div class="mdc-slider mdc-slider--discrete" tabindex="0" role="slider" aria-valuemin="1" aria-valuemax="12" aria-valuenow="0" aria-label="Select Value">
+                            <div class="mdc-slider__track-container">
+                              <div class="mdc-slider__track"></div>
+                            </div>
+                            <div class="mdc-slider__thumb-container">
+                              <div class="mdc-slider__pin"><span class="mdc-slider__pin-value-marker"></span></div>
+                              <svg class="mdc-slider__thumb" width="21" height="21">
+                                <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                              </svg>
+                              <div class="mdc-slider__focus-ring"></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <hr class="mdc-list-divider"><a class="mdc-list-item" href="#" data-mdc-auto-init="MDCRipple"><i class="material-icons">keyboard_arrow_right</i>    Afhalen</a>
+                      <ul class="mdc-list">
+                        <li class="mdc-list-item">
+                          <div class="mdc-radio">
+                            <input class="mdc-radio__native-control" id="radio-2-1" type="radio" name="radios-2" checked="">
+                            <div class="mdc-radio__background">
+                              <div class="mdc-radio__outer-circle"></div>
+                              <div class="mdc-radio__inner-circle"></div>
+                            </div>
+                          </div>
+                          <label id="radio-2-1-label" for="radio-2-1">Inclusief BTW</label>
+                        </li>
+                        <li class="mdc-list-item">
+                          <div class="mdc-radio">
+                            <input class="mdc-radio__native-control" id="radio-2-2" type="radio" name="radios-2">
+                            <div class="mdc-radio__background">
+                              <div class="mdc-radio__outer-circle"></div>
+                              <div class="mdc-radio__inner-circle"></div>
+                            </div>
+                          </div>
+                          <label id="radio-2-2-label" for="radio-2-2">Exclusief BTW</label>
+                        </li>
+                      </ul>
+                      <hr class="mdc-list-divider"><a class="mdc-list-item" href="#" data-mdc-auto-init="MDCRipple"><i class="material-icons">keyboard_arrow_right</i>    Koerier</a>
+                      <ul class="mdc-list">
+                        <li class="mdc-list-item list-item-slider">
+                          <div class="mdc-slider mdc-slider--discrete" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Select Value">
+                            <div class="mdc-slider__track-container">
+                              <div class="mdc-slider__track"></div>
+                            </div>
+                            <div class="mdc-slider__thumb-container">
+                              <div class="mdc-slider__pin"><span class="mdc-slider__pin-value-marker"></span></div>
+                              <svg class="mdc-slider__thumb" width="21" height="21">
+                                <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                              </svg>
+                              <div class="mdc-slider__focus-ring"></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <div class="mdc-card">
+                  <div class="mdc-card__primary">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Winkel</th>
+                          <th>Score</th>
+                          <th>Basisprijs</th>
+                          <th>Totaalprijs</th>
+                          <th> </th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel" id="panel-2" role="tabpanel" aria-hidden="true">
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-12">
+                <h2>Specificaties en productafbeeldingen</h2>
+                <p><strong>Verkrijgbaar sinds: 22 april 2015</strong> - Beschikbaar bij <a href="#">14 winkels</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet">
+                <div class="mdc-card">
+                  <div class="mdc-card__primary">
+                    <div class="mdc-list-group"><a class="mdc-list-item" href="#" data-mdc-auto-init="MDCRipple">    Populaire specificaties<i class="material-icons">keyboard_arrow_right</i></a>
+                      <div class="mdc-list">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Behuizingtype</td>
+                              <td>Tower</td>
+                            </tr>
+                            <tr>
+                              <td>Form Factor</td>
+                              <td>ATX (Standard), Micro-ATX (µATX), Mini-ITX</td>
+                            </tr>
+                            <tr>
+                              <td>Behuizing Panel</td>
+                              <td>Closed, Fan</td>
+                            </tr>
+                            <tr>
+                              <td>Grafische kaart maximum lengte</td>
+                              <td>425mm</td>
+                            </tr>
+                            <tr>
+                              <td>CPU koeler maximum hoogte</td>
+                              <td>180mm</td>
+                            </tr>
+                            <tr>
+                              <td>Kleuren	</td>
+                              <td>Zwart</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div><a class="mdc-list-item" href="#" data-mdc-auto-init="MDCRipple">    Technische specificaties<i class="material-icons">keyboard_arrow_right</i></a>
+                      <div class="mdc-list">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Behuizingtype</td>
+                              <td>Tower</td>
+                            </tr>
+                            <tr>
+                              <td>Form Factor</td>
+                              <td>ATX (Standard), Micro-ATX (µATX), Mini-ITX</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <div class="mdc-card">
+                  <div class="mdc-card__primary m-p-g">
+                    <div class="m-p-g__thumbs" data-google-image-layout="" data-max-height="350"><img class="m-p-g__thumbs-img" src="./images/photo-1.jpeg" data-full="./images/photo-1.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-2.jpeg" data-full="./images/photo-2.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-3.jpeg" data-full="./images/photo-3.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-4.jpeg" data-full="./images/photo-4.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-1.jpeg" data-full="./images/photo-1.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-2.jpeg" data-full="./images/photo-2.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-3.jpeg" data-full="./images/photo-3.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-4.jpeg" data-full="./images/photo-4.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-1.jpeg" data-full="./images/photo-1.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-2.jpeg" data-full="./images/photo-2.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-3.jpeg" data-full="./images/photo-3.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-4.jpeg" data-full="./images/photo-4.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-1.jpeg" data-full="./images/photo-1.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-2.jpeg" data-full="./images/photo-2.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-3.jpeg" data-full="./images/photo-3.jpeg"><img class="m-p-g__thumbs-img" src="./images/photo-4.jpeg" data-full="./images/photo-4.jpeg"></div>
+                    <div class="m-p-g__fullscreen"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel" id="panel-3" role="tabpanel" aria-hidden="true">
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-12">
+                <h2>Alternatieven bekijken</h2>
+                <p> Bekijk en vergelijk alternatieven voor de Fractal Design Define S. Dit zijn populaire modellen met een vergelijkbare prijs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card">
+                  <section class="mdc-card__primary">
+                    <div class="mdc-form-field">
+                      <div class="mdc-switch">
+                        <input class="mdc-switch__native-control" id="basic-switch-1" type="checkbox">
+                        <div class="mdc-switch__background">
+                          <div class="mdc-switch__knob"></div>
+                        </div>
+                      </div>
+                      <label class="mdc-switch-label" for="basic-switch-1">Vergelijk</label>
+                    </div>
+                  </section>
+                  <section class="mdc-card__primary"><img class="mdc-card__primary" src="./images/photo-1.jpeg"></section>
+                  <section class="mdc-card__primary">
+                    <h1 class="mdc-card__title mdc-card__title--large">Fractal Design Meshify C</h1>
+                    <h2 class="mdc-card__subtitle">Tower • 5 interne bays</h2>
+                    <p><span class="material-icons-set material-icons-set--green"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span><a class="price-link" href="#">€ 82,-</a>
+                      <button class="mdc-button mdc-button--raised mdc-button--compact mdc-card__action">Bekijk dit product</button>
+                    </p>
+                  </section>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card">
+                  <section class="mdc-card__primary">
+                    <div class="mdc-form-field">
+                      <div class="mdc-switch">
+                        <input class="mdc-switch__native-control" id="basic-switch-2" type="checkbox">
+                        <div class="mdc-switch__background">
+                          <div class="mdc-switch__knob"></div>
+                        </div>
+                      </div>
+                      <label class="mdc-switch-label" for="basic-switch-2">Vergelijk</label>
+                    </div>
+                  </section>
+                  <section class="mdc-card__primary"><img class="mdc-card__primary" src="./images/photo-2.jpeg"></section>
+                  <section class="mdc-card__primary">
+                    <h1 class="mdc-card__title mdc-card__title--large">Fractal Design Meshify C</h1>
+                    <h2 class="mdc-card__subtitle">Tower • 5 interne bays</h2>
+                    <p><span class="material-icons-set material-icons-set--green"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span><a class="price-link" href="#">€ 82,-</a>
+                      <button class="mdc-button mdc-button--raised mdc-button--compact mdc-card__action">Bekijk dit product</button>
+                    </p>
+                  </section>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card">
+                  <section class="mdc-card__primary">
+                    <div class="mdc-form-field">
+                      <div class="mdc-switch">
+                        <input class="mdc-switch__native-control" id="basic-switch-3" type="checkbox">
+                        <div class="mdc-switch__background">
+                          <div class="mdc-switch__knob"></div>
+                        </div>
+                      </div>
+                      <label class="mdc-switch-label" for="basic-switch-3">Vergelijk</label>
+                    </div>
+                  </section>
+                  <section class="mdc-card__primary"><img class="mdc-card__primary" src="./images/photo-3.jpeg"></section>
+                  <section class="mdc-card__primary">
+                    <h1 class="mdc-card__title mdc-card__title--large">Fractal Design Meshify C</h1>
+                    <h2 class="mdc-card__subtitle">Tower • 5 interne bays</h2>
+                    <p><span class="material-icons-set material-icons-set--green"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span><a class="price-link" href="#">€ 82,-</a>
+                      <button class="mdc-button mdc-button--raised mdc-button--compact mdc-card__action">Bekijk dit product</button>
+                    </p>
+                  </section>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card">
+                  <section class="mdc-card__primary">
+                    <div class="mdc-form-field">
+                      <div class="mdc-switch">
+                        <input class="mdc-switch__native-control" id="basic-switch-4" type="checkbox">
+                        <div class="mdc-switch__background">
+                          <div class="mdc-switch__knob"></div>
+                        </div>
+                      </div>
+                      <label class="mdc-switch-label" for="basic-switch-4">Vergelijk</label>
+                    </div>
+                  </section>
+                  <section class="mdc-card__primary"><img class="mdc-card__primary" src="./images/photo-4.jpeg"></section>
+                  <section class="mdc-card__primary">
+                    <h1 class="mdc-card__title mdc-card__title--large">Fractal Design Meshify C</h1>
+                    <h2 class="mdc-card__subtitle">Tower • 5 interne bays</h2>
+                    <p><span class="material-icons-set material-icons-set--green"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span><a class="price-link" href="#">€ 82,-</a>
+                      <button class="mdc-button mdc-button--raised mdc-button--compact mdc-card__action">Bekijk dit product</button>
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.js?v=1510550074005"></script>
+    <script src="js/main.js?v=1510550074005"></script>
+  </body>
+</html>
